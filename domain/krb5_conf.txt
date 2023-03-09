@@ -1,0 +1,20 @@
+[libdefaults]
+	default_realm = SGUPOS.EDU
+
+
+[realms]
+	SGUPOS.EDU = {
+		kdc = SGUPOS
+		admin_server = SGUPOS
+		default_domain = SGUPOS.EDU
+	}
+	
+
+[domain_realm]
+	.sgupos.edu = SGUPOS.EDU
+	sgupos.edu = SGUPOS.EDU
+	
+
+[login]
+	krb4_convert = true
+	krb4_get_tickets = false
